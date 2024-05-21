@@ -1,6 +1,5 @@
 import React from 'react'
 import './hero.css'
-import { redirect } from 'react-router-dom';
 
 export default function Hero({bool1,setBool1,loggedIn}) {
     return (

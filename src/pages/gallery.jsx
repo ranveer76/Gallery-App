@@ -4,13 +4,11 @@ import UploadImg from "../component/upload_img/upload_img";
 
 const databasehost = location.protocol + '//' + location.hostname + ':3001'
 
-export default function Gallery({ user_id, setUser, SelectedAlbum, setSelectedAlbum, albums, setAlbums, images, setImages}) {
+export default function Gallery({ user_id, SelectedAlbum, setSelectedAlbum, albums, setAlbums, images, setImages}) {
     const [Allimages, setAllImages] = useState([]);
     const [selectedImages, setSelectedImages] = useState([]);
     const [doubleclicked, setDoubleclicked] = useState(null);
     const [dragging, setDragging] = useState(false);
-    const [startX, setStartX] = useState(null);
-    const [startY, setStartY] = useState(null);
     const [openedimg, setOpenedimg] = useState(null);
     const [datalen, setDatalen] = useState(0);
     const [upload, setUpload] = useState(false);
@@ -70,8 +68,6 @@ export default function Gallery({ user_id, setUser, SelectedAlbum, setSelectedAl
     const handleImageMouseDown = (imageId, e) => {
         e.preventDefault();
         setDragging(true);
-        setStartX(e.clientX);
-        setStartY(e.clientY);
         if (e.ctrlKey || e.shiftKey) {
         toggleImageSelection(imageId);
         } else {
