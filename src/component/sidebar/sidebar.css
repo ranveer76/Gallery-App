@@ -1,0 +1,60 @@
+.gallery-container{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 20px;
+    min-height: 100%;
+    width: 100%;
+} 
+.sidebar{
+    width: 20%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    top: 72px;
+    left: 0;
+}
+.sidebarheader{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.sidebarheader button{
+    background-color: #f1f1f1;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.sidebarheader button:hover{
+    background-color: #e1e1e1;
+}
+.sidebarItem_list{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%;
+}
+.sidebarItem{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.sidebarItem:hover{
+    background-color: #f1f1f1;
+}

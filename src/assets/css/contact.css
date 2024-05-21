@@ -1,0 +1,33 @@
+.contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
+}
+.contact-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    width: 60%;
+    height: 380px;
+    margin: 20px;
+    border-radius: 20px;
+    color: aliceblue;
+    background: no-repeat center/cover
+    url(https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0);
+    }
+.contact h1{
+    font-size: 2rem;
+    font-weight: 600;
+    text-shadow: -3px 3px 2px #5b5b5b73;
+}
+.contact p{
+    font-size: 1rem;
+    font-weight: 500;
+    text-shadow: -3px 3px 2px #5b5b5b73;
+}

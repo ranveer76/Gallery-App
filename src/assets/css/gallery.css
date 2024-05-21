@@ -1,0 +1,229 @@
+
+.gallery{
+    width: 80%;
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 1rem;
+}
+.gallery-images{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    padding: 1rem;
+}
+.gallery-image-container{
+    position: relative;
+}
+.gallery img{
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+.gallery .gallery-image-container input[type="checkbox"]{
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    cursor: pointer;
+    opacity: 0;
+}
+
+.gallery .gallery-image-container input[type="checkbox"]:checked{
+    opacity: 1;
+}
+
+.gallery .upload{
+    background-color: #bbbbbb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    width: 220px;
+    height: 180px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.gallery .upload form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.gallery .upload .preview{
+    width: 120px;
+    height: 120px;
+}
+
+.gallery .upload form input[type="file"]{
+    display: none;
+}
+
+.gallery .upload form button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.gallery .upload form button:hover{
+    background-color: #08860ca7;
+}
+
+.gallery .gallery_head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+.gallery .gallery_head .buttons{
+    display: flex;
+    gap: 1rem;
+}
+.gallery .gallery_head button{
+    position: relative;
+    background-color: #f1f1f1;
+    border: none;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.gallery .gallery_head button:hover{
+    background-color: #e1e1e1;
+}
+.gallery .gallery_head .head{
+    display: flex;
+    gap: 1rem;
+}
+
+#context-menu{
+    display: none;
+    position: fixed;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000;
+    padding: 0.5rem;
+    color: white;
+    border-radius: 15px;
+    z-index: 1000;
+}
+.context-menu ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    list-style: none;
+}
+.context-menu li{
+    padding: 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.context-menu li:hover{
+    background-color: #cccccc;
+}
+.gallery-image-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    display: none;
+}
+.upload-overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+}
+
+
+.gallery_head .dropdown{
+    position: relative;
+}
+
+.album-overlay{
+    border-radius: 5px;
+    padding: 1rem;
+    background-color: #ffffff;
+    position: absolute;
+    top: 100%;
+    left: -100%;
+    z-index: 1000;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.album-overlay .album{
+    padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    max-height: 180px;
+}
+
+.album-overlay .album h1{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.album-overlay .album button{
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1rem;
+}
+
+.album-overlay .album button:hover{
+    background-color: #205f12c9;
+}
+
+.album-overlay .album .albumItem_list{
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+}
+.album-overlay .album .albumItem{
+    width: 100%;
+    text-align: center;
+    border-radius: 8px;
+    padding: 0.5rem;
+    cursor: pointer;
+}
+
+.album-overlay .album .albumItem:hover{
+    background-color: #cccccc;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+}

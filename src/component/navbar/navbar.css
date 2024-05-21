@@ -1,0 +1,79 @@
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    box-shadow: 0px 4px 8px #5b5b5b73;
+    background-color: #e9e7e777;
+}
+
+.navbar .logo{
+    min-width: max-content;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+.navbar .nav-links ul{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.navbar .nav-profile{
+    display: block;
+    background-color: black;
+    border-radius: 50%;
+    cursor: pointer;
+    min-width: 35px;
+    min-height: 35px;
+}
+.navbar .nav-profile:hover{
+    background-color: #00000088;
+}
+.navbar .nav-profile ul{
+    position: absolute;
+    top: 100%;
+    right: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #00000088;
+    border-radius: 5px;
+    padding: 0.5rem;
+}
+
+.navbar .nav-profile ul li{
+    width: 100%;
+    margin: 3px;
+}
+.navbar .nav-profile ul li a,
+.navbar .nav-profile ul li button{
+    width: 100%;
+    text-align: center;
+    background: #3bd009cf;
+    padding: 0.5rem;
+    color: rgb(255, 255, 255);
+    font-size: 0.9rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.navbar .nav-profile ul li a:hover,
+.navbar .nav-profile ul li button:hover{
+    background: #3e9706aa;
+}
+
+.navbar .nav-links ul li a{
+    color: #4caf50;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.navbar .nav-links ul li a:hover{
+    color: #3e9706;
+}

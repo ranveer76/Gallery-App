@@ -1,0 +1,79 @@
+.login_signup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #000000cf;
+    color: white;
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 300px;
+    z-index: 100;
+}
+
+.login_signup h1{
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: white;
+}
+
+.login_signup input[type="text"],
+.login_signup input[type="password"],
+.login_signup input[type="email"]{
+    width: 90%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.login_signup input[type="text"]:focus,
+.login_signup input[type="password"]:focus,
+.login_signup input[type="email"]:focus{
+    outline: none;
+}
+
+.login_signup input[type="checkbox"]{
+    width: 10%;
+    height: 1rem;
+    cursor: pointer;
+}
+
+.login_signup input[type="checkbox"]:focus{
+    outline: none;
+}
+.login_signup button{
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: large;
+    background-color: #4caf50;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.login_signup button:hover{
+    background-color: #42ce0f9a;
+    color: white;
+}
+.remember{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 90%;
+}
+
+.login_signup p span{
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.login_signup p span:hover{
+    color: #ffffffcc;
+    text-decoration: underline;
+}
