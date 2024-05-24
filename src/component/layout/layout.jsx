@@ -45,11 +45,7 @@ export default function Layout({children}) {
                     return {
                         id: item.id,
                         name: item.name,
-<<<<<<< HEAD
-                        comment: item.feedback,
-=======
                         feedback: item.feedback,
->>>>>>> 730c8ab (initial)
                         created_at: item.created_at
                     }
                 })

@@ -1,4 +1,4 @@
-import React,{useState,useEffect} from 'react'
+import React,{useEffect} from 'react'
 import {Link} from 'react-router-dom'
 import Hero from '../component/hero/hero'
 import Form from '../component/form/form'
@@ -84,11 +84,7 @@ export default function Home({bool1, setBool1, loggedIn, user_id, feedback, setF
                             feedback.map(item => (
                                 <div className="feedback-slide" key={item.id}>
                                     <p>{item.name}</p>
-<<<<<<< HEAD
-                                    <p>{item.comment}</p>
-=======
                                     <p>{item.feedback}</p>
->>>>>>> 730c8ab (initial)
                                     <p>Created At:</p>
                                     <p>{item.created_at}</p>
                                 </div>

@@ -1,8 +1,5 @@
 import { createBrowserRouter as cbr, RouterProvider as Rp } from 'react-router-dom'
-<<<<<<< HEAD
 import React from 'react'
-=======
->>>>>>> 730c8ab (initial)
 import Home from './pages/home'
 import About from './pages/about'
 import Gallery from './pages/gallery'
