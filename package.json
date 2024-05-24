@@ -4,8 +4,8 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "start": "concurrently \"npm run dev\" \"npm run dev-server\"",
-    "dev-server": "npx json-server ./database/db.json --port 3001",
+    "start": "concurrently \"npm run dev-server\" \"npm run dev\"",
+    "dev-server": "json-server ./database/db.json --port 3001",
     "dev": "vite --host",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
