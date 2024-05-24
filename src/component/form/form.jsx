@@ -42,7 +42,11 @@ export default function Form({loggedIn, comments, setComments, username}) {
                         return {
                             id: item.id,
                             name: item.name,
+<<<<<<< HEAD
                             comment: item.feedback,
+=======
+                            feedback: item.feedback,
+>>>>>>> 730c8ab (initial)
                             created_at: item.created_at
                         }
                     })
@@ -55,7 +59,10 @@ export default function Form({loggedIn, comments, setComments, username}) {
 
     const handleComment = (e) => {
         e.preventDefault()
+<<<<<<< HEAD
         const formData = new FormData(e.target)
+=======
+>>>>>>> 730c8ab (initial)
         const id = comments.length + 1
         const time =
         new Date().getFullYear() +
@@ -69,7 +76,11 @@ export default function Form({loggedIn, comments, setComments, username}) {
         new Date().getMinutes() +
         ':' +
         new Date().getSeconds()
+<<<<<<< HEAD
         const data = { id, user_id:UserId?UserId:'', name, email, comment, created_at:time, updated_at:time }
+=======
+        const data = { id, user_id:UserId?UserId:'', name, email, feedback:comment, created_at:time, updated_at:time }
+>>>>>>> 730c8ab (initial)
         fetch(database, {
             method: 'POST',
             headers: {
